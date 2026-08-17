@@ -18,6 +18,40 @@ All three are visible live in the dashboard.
 
 ---
 
+## Live Demo
+
+The application is publicly deployed and available to try online:
+
+**https://upi-offline-mesh-v0tz.onrender.com/**
+
+The live deployment provides the complete interactive command center, including:
+
+- Live mesh network simulation
+- Encrypted payment packet creation
+- Virtual device-to-device gossip
+- Bridge upload simulation
+- Exactly-once settlement
+- Idempotency and duplicate detection
+- Account balances
+- Transaction ledger
+- Live activity stream
+
+### Try the demo
+
+1. Open the live demo.
+2. Select a sender and receiver.
+3. Enter an amount and demo PIN.
+4. Click **Inject into mesh**.
+5. Run a **gossip round** to move the packet through the simulated devices.
+6. Click **Upload from bridges** to send the packet to the backend.
+7. Watch the account balance and transaction ledger update.
+
+The application automatically refreshes the network state every few seconds.
+
+> **Note:** This is an educational proof of concept. It does not process real money and is not connected to NPCI, UPI, banks, or real payment providers.
+
+---
+
 ## Running it
 
 **Prerequisite:** JDK 17+ on your PATH (`java -version` to check). Nothing else — no database or Redis to install, the Maven wrapper handles the build.
